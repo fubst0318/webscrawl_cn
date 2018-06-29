@@ -36,3 +36,8 @@ if __name__ == '__main__':
     '''
     print('第一个p节点的所有属性:', bsObj.p.attrs)
     print('第一个p节点的name属性', bsObj.p.attrs['name'])
+    '''
+    更简单的数据获取方式，不写attrs，直接节点元素后面加中括号，传入属性名就可以达到属性值了：
+    '''
+    print('更简单的name数据获取方式:', bsObj.p['name'])
+    print('更简单的class数据获取方式:', bsObj.p['class'])
