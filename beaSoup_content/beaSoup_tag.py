@@ -26,3 +26,13 @@ if __name__ == '__main__':
     print(bsObj.title.string)
     print(bsObj.head)
     print(bsObj.p)
+    '''
+    获取属性名称 name 属性来获取节点的名称
+    '''
+    print('属性名称:', bsObj.title.name)
+    '''
+    获取属性 每个节点可能有多个属性，比如 id，class 等等，
+    我们选择到这个节点元素之后，可以调用 attrs 获取所有属性。
+    '''
+    print('第一个p节点的所有属性:', bsObj.p.attrs)
+    print('第一个p节点的name属性', bsObj.p.attrs['name'])
