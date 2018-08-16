@@ -141,7 +141,8 @@ class CrackTouClick():
         登录
         :return: None
         """
-        submit = self.wait.until(EC.element_to_be_clickable((By.ID,'_submit')))
+        submit = self.wait.until(
+            EC.element_to_be_clickable((By.ID, '_submit')))
         submit.click()
         time.sleep(10)
         print('登录成功')
@@ -163,8 +164,8 @@ class CrackTouClick():
         result = self.chaojiying.PostPic(
             bytes_array.getvalue(), CHAOJIYING_KIND)
         print(result)
-        locatons = self.get_points(result)
-        self.touch_click_words(locatons)
+        locations = self.get_points(result)
+        self.touch_click_words(locations)
         self.touch_click_verify()
         # 判定是否成功
         success = self.wait.until(EC.text_to_be_present_in_element(
