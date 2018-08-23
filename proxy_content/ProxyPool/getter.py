@@ -16,7 +16,7 @@ class Getter():
         """
         判断是否达到代理池限制
         """
-        if self.redis.count >= POOL_UPPER_THRESHOLD:
+        if self.redis.count() >= POOL_UPPER_THRESHOLD:
             return True
         else:
             return False
