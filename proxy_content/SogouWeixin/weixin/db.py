@@ -3,8 +3,9 @@
 
 from pickle import dumps, loads
 from redis import StrictRedis
-from weixin.request import WeixinRequest
-from weixin.config import REDIS_HOST, REDIS_KEY, REDIS_PASSWORD, REDIS_PORT
+from request import WeixinRequest
+from config import REDIS_HOST, REDIS_KEY, REDIS_PASSWORD, REDIS_PORT
+
 
 """
 这里主要使用Redis中的List

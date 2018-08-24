@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-from weixin.config import TIMEOUT
+from config import TIMEOUT
 from requests import Request
 
 
