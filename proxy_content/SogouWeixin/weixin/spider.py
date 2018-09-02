@@ -113,6 +113,7 @@ class Spider():
             callback = weixin_request.callback
             print('Schedule', weixin_request.url)
             response = self.request(weixin_request)
+            print('Response', response)
             if response and response.status_code in VALID_STATUSES:
                 results = list(callback(response))
                 if results:
@@ -155,6 +156,7 @@ class Spider():
         self.start()
         self.schedule()
 
-if __name__ =='__main__':
+
+if __name__ == '__main__':
     spider = Spider()
     spider.run()
