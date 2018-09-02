@@ -100,7 +100,7 @@ class Spider():
         weixin_request.fail_time = weixin_request.fail_time + 1
         print('Request Failed', weixin_request.fail_time,
               'Times', weixin_request.url)
-        if weixin_request.failtime < MAX_FAILED_TIME:
+        if weixin_request.fail_time < MAX_FAILED_TIME:
             self.queue.add(weixin_request)
 
     def schedule(self):

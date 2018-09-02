@@ -6,7 +6,7 @@ from config import MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_PORT, MYSQL_DAT
 
 
 class MySQL():
-    def __init__(self, host=MYSQL_HOST, username=MYSQL_USER, password=MYSQL_PASSWORD, port=MYSQL_PORT, database=MYSQL_DATABASE):
+    def __init__(self, host=MYSQL_HOST, username=MYSQL_USER, password=MYSQL_PASSWORD, port=MYSQL_PORT, database=MYSQL_DATABASE, charset='utf8'):
         """
         MYSQL 初始化
         :param host:
@@ -17,7 +17,7 @@ class MySQL():
         """
         try:
             self.db = pymysql.connect(
-                host, username, password, database, charset='utf-8', port=port)
+                host, username, password, database, charset='utf8', port=port)
             self.cursor = self.db.cursor()
         except pymysql.MySQLError as e:
             print(e.args)
