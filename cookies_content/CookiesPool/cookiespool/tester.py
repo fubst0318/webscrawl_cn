@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
+"""
+这是一个检测模块
+主要检测Cookies是否还有效
+"""
+
 from db import RedisClient
 import json
 from config import TEST_URL_MAP

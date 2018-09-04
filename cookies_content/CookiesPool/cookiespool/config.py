@@ -13,8 +13,12 @@ REDIS_PASSWORD = None
 # 产生器使用的浏览器
 BROWSER_TYPE = 'Chrome'
 
-# 测试类，如扩展其他站点，请在此配置
+# 产生器类，如扩展其他站点，请在此配置
+GENERATOR_MAP = {
+    'weibo': 'WeiboCookiesGenerator'
+}
 
+# 测试类，如扩展其他站点，请在此配置
 TEST_URL_MAP = {
     'weibo': 'https://m.weibo.cn/'
 }
