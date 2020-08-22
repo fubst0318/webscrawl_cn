@@ -58,7 +58,7 @@ class Login(object):
             '//select[@id="user_profile_email"]/option[@value!=""]/text()')
         print(name, email)
 
-
+XX
 if __name__ == '__main__':
     login = Login()
-    login.login(email='xuzhan@baosight.com', password='johnlocke0318')
+    login.login(email='XX', password='XXX')
